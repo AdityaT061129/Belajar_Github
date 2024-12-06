@@ -23,8 +23,8 @@ void main() {
 
   anjing.kaki = "4";
   anjing.makanan = "Daging";
-  anjing.habitat = "Kamar Yansu";
-  anjing.nama = "Anjing";
+  anjing.habitat = "Kamar Adit";
+  anjing.nama = "Singa";
   anjing.suara = "Mendesah";
 
   anjing.tulis(anjing.kaki!, anjing.makanan!, anjing.habitat!, anjing.nama!);
