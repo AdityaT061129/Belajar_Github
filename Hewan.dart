@@ -1,32 +1,47 @@
 class Hewan {
-  String? kaki;
-  String? makanan;
-  String? habitat;
-  String? nama;
+  String kaki;
+  String makanan;
+  String habitat;
+  String nama;
+  String suara;
+
+  Hewan({
+    required this.kaki,
+    required this.makanan,
+    required this.habitat,
+    required this.nama,
+    required this.suara,
+  }); 
 }
 
 class HewanAction extends Hewan {
 
-  void tulis(String kaki, String makanan, String habitat, String nama) {
+  HewanAction({
+    required String kaki,
+    required String makanan,
+    required String habitat,
+    required String nama,
+    required String suara,
+  }): super(habitat: habitat,makanan: makanan,kaki: kaki,suara: suara, nama: nama);
+
+  void tulis(kaki, makanan, habitat,  nama) {
     print("Ini Adalah $nama");
     print("$nama Memiliki kaki $kaki");
     print("$nama Memiliki makanan $makanan");
     print("$nama Memiliki habitat $habitat");
   }
-  void bersuara() {
-    print("Anjing Bersuara dengan $suara");
+  void bersuara(suara) {
+    print("rendi Bersuara dengan $suara");
   }
 }
 
 void main() {
-  HewanAction anjing = HewanAction();
+  HewanAction rendi = HewanAction(
+    kaki: "4", makanan: "titid edi", 
+    habitat: "gudang beras", 
+    nama: "rendi", 
+    suara: "kontolllll lupa retri");
 
-  anjing.kaki = "4";
-  anjing.makanan = "Daging";
-  anjing.habitat = "Kamar Adit";
-  anjing.nama = "Singa";
-  anjing.suara = "Mendesah";
-
-  anjing.tulis(anjing.kaki!, anjing.makanan!, anjing.habitat!, anjing.nama!);
-  anjing.bersuara();
+  rendi.tulis(rendi.kaki, rendi.makanan, rendi.habitat, rendi.nama);
+  rendi.bersuara(rendi.suara);
 }
