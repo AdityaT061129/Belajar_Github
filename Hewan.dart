@@ -5,8 +5,8 @@ class Hewan {
   String? nama;
 }
 
-class Anjing extends Hewan {
-  String? suara;
+class HewanAction extends Hewan {
+
   void tulis(String kaki, String makanan, String habitat, String nama) {
     print("Ini Adalah $nama");
     print("$nama Memiliki kaki $kaki");
@@ -19,7 +19,7 @@ class Anjing extends Hewan {
 }
 
 void main() {
-  Anjing anjing = Anjing();
+  HewanAction anjing = HewanAction();
 
   anjing.kaki = "4";
   anjing.makanan = "Daging";
